@@ -24,7 +24,6 @@ public class InfoProductActivity extends AppCompatActivity {
     TextView nameTextView;
     TextView priceTextView;
     TextView descriptionTextView;
-    TextView countText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +36,6 @@ public class InfoProductActivity extends AppCompatActivity {
         nameTextView = findViewById(R.id.nameTextView);
         priceTextView = findViewById(R.id.priceTextView);
         descriptionTextView = findViewById(R.id.descriptionTextView);
-        countText = findViewById(R.id.countText);
-        countText.setText(String.valueOf(0));
 
         nameTextView.setText(getIntent().getStringExtra("productName"));
         priceTextView.setText(String.valueOf(getIntent().getDoubleExtra("productPrice", 1000)));
@@ -64,15 +61,15 @@ public class InfoProductActivity extends AppCompatActivity {
         }
     }
 
-    public void minusClick(View view){
-        if(Integer.parseInt(countText.getText().toString()) > 0){
-            countText.setText(String.valueOf(Integer.parseInt(countText.getText().toString()) - 1));
-        }
-    }
-
-    public void plusClick(View view){
-        countText.setText(String.valueOf(Integer.parseInt(countText.getText().toString()) + 1));
-    }
+//    public void minusClick(View view){
+//        if(Integer.parseInt(countText.getText().toString()) > 0){
+//            countText.setText(String.valueOf(Integer.parseInt(countText.getText().toString()) - 1));
+//        }
+//    }
+//
+//    public void plusClick(View view){
+//        countText.setText(String.valueOf(Integer.parseInt(countText.getText().toString()) + 1));
+//    }
 
     /*public void orderClick(View view){
         CreateOrderItemDto createOrderItemDto = new CreateOrderItemDto(getIntent().getLongExtra("productId", 1), Long.parseLong(countText.getText().toString()));

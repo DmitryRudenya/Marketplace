@@ -30,40 +30,40 @@
         android:layout_height="50dp"
         />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal">-->
 
-        <Button
-            android:id="@+id/buttonMinus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="minusClick"
-            android:text="-" />
+<!--        <Button-->
+<!--            android:id="@+id/buttonMinus"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="minusClick"-->
+<!--            android:text="-" />-->
 
-        <TextView
-            android:id="@+id/countText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
+<!--        <TextView-->
+<!--            android:id="@+id/countText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            />-->
 
-        <Button
-            android:id="@+id/buttonPlus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="plusClick"
-            android:text="+" />
-    </LinearLayout>
+<!--        <Button-->
+<!--            android:id="@+id/buttonPlus"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="plusClick"-->
+<!--            android:text="+" />-->
+<!--    </LinearLayout>-->
 
-    <Button
-        android:id="@+id/orderButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="orderClick"
-        android:text="Order" />
+<!--    <Button-->
+<!--        android:id="@+id/orderButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:onClick="orderClick"-->
+<!--        android:text="Order" />-->
 
 </LinearLayout>
